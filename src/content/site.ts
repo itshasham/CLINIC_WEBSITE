@@ -5,7 +5,7 @@ export const clinic = {
     'Luxury skin aesthetic clinic in DHA Lahore for laser, skin, hair, and cosmetic consultations.',
   description:
     'Nees Aesthetics is a luxury skin aesthetic clinic in DHA Lahore offering consultation-led laser, skin, hair, and cosmetic care in a calm, refined setting.',
-  url: 'https://www.neesaesthetics.com',
+  url: 'https://www.neesaesthetic.pk',
   whatsapp: 'https://wa.me/923216771064',
   email: 'info@neesaesthetics.com',
   phone: '+92-42-37182024',
