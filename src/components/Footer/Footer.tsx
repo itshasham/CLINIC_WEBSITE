@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <p className="text-sm uppercase tracking-[0.32em] text-white/45">Nees Aesthetics</p>
             <h2 className="mt-4 display-font text-[40px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[56px]">
-              A clinic website designed to feel as refined as the experience inside it.
+              Luxury skin, laser, hair, and cosmetic care in DHA Lahore.
             </h2>
             <p className="mt-5 max-w-2xl text-[15px] leading-8 text-white/65">{clinic.description}</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/8 px-8 py-5 text-sm text-white/45 md:px-14">
-          © 2026 {clinic.legalName}. Crafted for a calmer, more premium digital first impression.
+          © 2026 {clinic.legalName}. Consultation-led skin aesthetic care in DHA Lahore.
         </div>
       </div>
     </footer>

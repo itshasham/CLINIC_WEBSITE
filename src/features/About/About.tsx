@@ -1,22 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from '@/components/Button/Button';
 import { Reveal } from '@/components/Reveal/Reveal';
+import { JsonLd } from '@/components/Seo/JsonLd';
 import { clinic, experiencePillars, patientJourney } from '@/content/site';
+import { getBreadcrumbSchema } from '@/lib/seo';
 
 export function AboutPage() {
   return (
     <main className="section-space page-hero-space">
+      <JsonLd
+        data={getBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'About', path: '/about' },
+        ])}
+      />
       <section>
         <div className="container-shell grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
           <Reveal>
             <p className="eyebrow">About The Clinic</p>
             <h1 className="mt-4 display-font text-[46px] font-semibold leading-[0.9] tracking-[-0.05em] md:text-[78px]">
-              Luxury skin care only works when the experience feels considered at every step.
+              A luxury skin aesthetic clinic shaped around calm, considered care.
             </h1>
             <p className="mt-6 max-w-2xl text-[17px] leading-8 text-[color:var(--muted)]">
-              {clinic.name} is positioned as a calmer, more refined clinic destination in DHA Lahore. This redesign reframes
-              the brand around consultation-first care, premium atmosphere, and elegant trust signals rather than dated layouts
-              or overcrowded pages.
+              {clinic.name} is positioned as a refined clinic destination in DHA Lahore for visitors looking for a premium
+              skin clinic, laser clinic, or aesthetic clinic experience with a clearer and calmer consultation path.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button href={clinic.whatsapp}>Book via WhatsApp</Button>
@@ -64,7 +71,7 @@ export function AboutPage() {
           <Reveal>
             <p className="eyebrow">Patient Journey</p>
             <h2 className="mt-4 display-font text-[42px] font-semibold leading-[0.92] tracking-[-0.05em] md:text-[68px]">
-              The site now explains how the clinic works instead of simply listing treatments.
+              The clinic experience is built to explain the process before the treatment.
             </h2>
           </Reveal>
 
@@ -96,8 +103,8 @@ export function AboutPage() {
               Every treatment starts with understanding your skin before selling a solution.
             </h2>
             <p className="mt-6 max-w-3xl leading-8 text-[color:var(--muted)]">
-              That principle shapes the copy, page hierarchy, and motion throughout the new site. It keeps the digital
-              experience aligned with the premium, patient-first tone the clinic should communicate from the first scroll.
+              That principle shapes how the clinic presents itself online and how visitors move from discovery to contact. The
+              goal is to make the website feel as calm, trustworthy, and direct as the clinic experience itself.
             </p>
           </Reveal>
         </div>

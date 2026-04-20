@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/Button/Button';
 import { Reveal } from '@/components/Reveal/Reveal';
+import { JsonLd } from '@/components/Seo/JsonLd';
 import { clinic, contactHighlights } from '@/content/site';
+import { buildPageMetadata, getBreadcrumbSchema } from '@/lib/seo';
 
 const contactDetails = [
   { label: 'Phone', value: clinic.phone, href: clinic.phoneHref },
@@ -11,26 +13,38 @@ const contactDetails = [
   { label: 'Address', value: clinic.addressLines.join(', '), href: clinic.mapHref },
 ];
 
-export const contactMetadata: Metadata = {
-  title: 'Contact Us',
+export const contactMetadata: Metadata = buildPageMetadata({
+  title: 'Contact Nees Aesthetics',
   description:
-    'Contact Nees Aesthetics for consultations, treatment questions, and luxury clinic support in DHA Lahore via phone, email, or WhatsApp.',
-  keywords: ['Nees Aesthetics contact', 'laser clinic Lahore contact', 'skin clinic DHA Lahore', 'whatsapp clinic'],
-};
+    'Contact Nees Aesthetics in DHA Lahore for skin consultations, treatment questions, and clinic support by WhatsApp, phone, or email.',
+  path: '/contact',
+  keywords: [
+    'Nees Aesthetics contact',
+    'skin clinic Lahore contact',
+    'aesthetic clinic DHA Lahore contact',
+    'WhatsApp skin clinic Lahore',
+  ],
+});
 
 export function ContactPage() {
   return (
     <main className="page-hero-space">
+      <JsonLd
+        data={getBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Contact', path: '/contact' },
+        ])}
+      />
       <section className="section-space pb-10">
         <div className="container-shell grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <Reveal className="max-w-3xl">
             <p className="eyebrow">Contact Us</p>
             <h1 className="mt-4 display-font text-[46px] font-semibold leading-[0.9] tracking-[-0.05em] md:text-[78px]">
-              A contact page that finally feels premium, easy, and immediate.
+              Contact a skin aesthetic clinic in DHA Lahore without the extra steps.
             </h1>
             <p className="mt-6 max-w-2xl text-[17px] leading-8 text-[color:var(--muted)]">
-              The new experience keeps communication simple and fast. Visitors can move straight to WhatsApp, call the clinic,
-              email the team, or use a polished static inquiry form until backend handling is added.
+              Visitors can move straight to WhatsApp, call the clinic, email the team, or use the inquiry form preview to ask
+              about consultations, treatment categories, and clinic timing.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -57,8 +71,8 @@ export function ContactPage() {
                 <p className="text-sm uppercase tracking-[0.28em] text-[color:var(--accent)]">Contact form preview</p>
                 <h2 className="mt-3 display-font text-[40px] font-semibold tracking-[-0.04em]">Tell the clinic what you need</h2>
                 <p className="mt-3 text-sm leading-7 text-[color:var(--muted)]">
-                  This is still static, but the UX is ready for a full inquiry flow. The styling now supports a premium feel
-                  instead of looking like a filler section.
+                  This form is still static for now, but it already supports the right user journey for treatment questions,
+                  consultation requests, and follow-up contact.
                 </p>
 
                 <form className="mt-8 space-y-4" aria-label="Contact form preview">
@@ -92,7 +106,7 @@ export function ContactPage() {
             <div className="rounded-[36px] bg-[linear-gradient(180deg,#2d231d_0%,#18110d_100%)] p-8 text-white md:p-12">
               <p className="text-sm uppercase tracking-[0.28em] text-white/60">Clinic information</p>
               <h2 className="mt-4 display-font text-[42px] font-semibold tracking-[-0.04em] md:text-[56px]">
-                Direct details, finally presented with enough clarity.
+                Direct details for calls, WhatsApp, email, and directions.
               </h2>
               <div className="mt-8 space-y-5">
                 {contactDetails.map((item) => (
@@ -111,7 +125,7 @@ export function ContactPage() {
             <Reveal delay={120}>
               <div className="rounded-[36px] border border-[color:var(--line)] bg-white/65 p-8 md:p-10">
                 <p className="text-sm uppercase tracking-[0.28em] text-[color:var(--accent)]">Hours & response</p>
-                <h2 className="mt-4 display-font text-[40px] font-semibold tracking-[-0.04em]">Fast response, polished feel.</h2>
+                <h2 className="mt-4 display-font text-[40px] font-semibold tracking-[-0.04em]">Clear response windows and clinic hours.</h2>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   <InfoCard title="Hours" text={`${clinic.hours[0]} · ${clinic.hours[1]}`} />
                   <InfoCard title="Response time" text="Usually within 24 hours for digital inquiries" />
@@ -125,8 +139,8 @@ export function ContactPage() {
                 <div className="mt-4 rounded-[28px] border border-dashed border-[color:var(--line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.6)_0%,rgba(240,230,215,0.8)_100%)] p-8">
                   <h3 className="display-font text-[34px] font-semibold tracking-[-0.04em]">DHA Phase 5, Lahore</h3>
                   <p className="mt-3 max-w-2xl leading-8 text-[color:var(--muted)]">
-                    {clinic.addressLines.join(', ')}. A map link is already wired in, so this can become an embedded map or a
-                    branded directions block later.
+                    {clinic.addressLines.join(', ')}. This makes it easier for visitors searching for a skin clinic in DHA
+                    Lahore to confirm the clinic location before reaching out.
                   </p>
                   <Button href={clinic.mapHref} variant="secondary" className="mt-6">
                     Open in Maps

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from '@/components/Button/Button';
 import { Reveal } from '@/components/Reveal/Reveal';
+import { JsonLd } from '@/components/Seo/JsonLd';
 import {
   clinic,
   experiencePillars,
@@ -12,6 +13,7 @@ import {
 } from '@/content/site';
 import { InteractiveHero } from '@/features/Home/InteractiveHero';
 import { MotionServiceGrid } from '@/features/Home/MotionServiceGrid';
+import { getFaqSchema } from '@/lib/seo';
 
 const heroImage = 'https://framerusercontent.com/images/nzLcI2gIko5jP7H7JHhs97DQ0.jpg?width=1820&height=960';
 const clinicImage = 'https://framerusercontent.com/images/4gRqLtjxPBtwZmePma4I5n97gcI.jpg?width=1820&height=961';
@@ -33,6 +35,7 @@ export function HomePage() {
 
   return (
     <main className="overflow-hidden pb-20">
+      <JsonLd data={getFaqSchema()} />
       <InteractiveHero heroImage={heroImage} clinicName={clinic.name} whatsapp={clinic.whatsapp} orbitServices={orbitServices} />
 
       <section className="section-space py-10">
@@ -56,13 +59,13 @@ export function HomePage() {
           <Reveal>
             <p className="eyebrow">Our Treatments</p>
             <h2 className="mt-4 max-w-3xl display-font text-[40px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[54px] md:text-[80px]">
-              Designed to feel clearer, calmer, and naturally refined.
+              Skin, laser, hair, and cosmetic care in DHA Lahore.
             </h2>
           </Reveal>
           <Reveal delay={120}>
             <p className="max-w-2xl text-[16px] leading-8 text-[color:var(--muted)] lg:justify-self-end">
-              This section leans closer to the Dermato-style reference with larger serif hierarchy, softer beige surfaces,
-              rounded premium cards, and a more directed path toward consultation.
+              Nees Aesthetics brings together consultation-led skin care, laser treatments, hair support, and cosmetic care
+              for visitors looking for a calm and premium aesthetic clinic experience in Lahore.
             </p>
           </Reveal>
         </div>
@@ -86,11 +89,12 @@ export function HomePage() {
           <Reveal delay={120}>
             <p className="eyebrow">Why Choose Us</p>
             <h2 className="mt-4 display-font text-[40px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[54px] md:text-[82px]">
-              Treatment plans made around your actual skin.
+              A skin aesthetic clinic built around clarity and comfort.
             </h2>
             <p className="mt-6 max-w-2xl text-[16px] leading-8 text-[color:var(--muted)]">
-              We lead with skin analysis and expectation-setting before recommending laser, injectables, peels, or maintenance
-              care. The layout now mirrors the reference more closely while staying tailored to your clinic.
+              Visitors searching for a skin clinic in Lahore usually want two things: confidence in the clinic and clarity in
+              the next step. The experience here is centered on consultation, suitability, and a clear treatment path before
+              anything moves forward.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -115,11 +119,11 @@ export function HomePage() {
               <div className="p-4 md:p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-white/45">Visible Care</p>
                 <h2 className="mt-4 max-w-3xl display-font text-[40px] font-semibold leading-[0.92] tracking-[-0.055em] sm:text-[54px] md:text-[88px]">
-                  Clearer skin without a hard-sell experience.
+                  Skin confidence grows faster when the plan is clear.
                 </h2>
                 <p className="mt-6 max-w-xl text-[16px] leading-8 text-white/62">
-                  This darker section keeps the reference’s luxury contrast moment while positioning the clinic around clarity,
-                  restraint, and consultation-first confidence.
+                  From the first inquiry to aftercare guidance, the clinic experience is positioned around calm communication,
+                  realistic planning, and polished support rather than pressure.
                 </p>
                 <Button href={clinic.whatsapp} className="mt-9 bg-white text-[color:var(--text)] hover:bg-[#fff4e8]">
                   Book Appointment
@@ -147,13 +151,13 @@ export function HomePage() {
       <section className="section-space">
         <div className="container-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <Reveal>
-            <p className="eyebrow">Before / After Feeling</p>
+            <p className="eyebrow">What To Expect</p>
             <h2 className="mt-4 display-font text-[42px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[56px] md:text-[76px]">
-              From uncertainty and clutter to clarity, confidence, and a more elevated booking path.
+              A clearer journey from first question to treatment plan.
             </h2>
             <p className="mt-6 max-w-xl text-[16px] leading-8 text-[color:var(--muted)]">
-              Without authentic patient assets, the redesign still creates a believable before-and-after story through layout:
-              first the concern, then the plan, then the refined outcome.
+              People often search for a skin aesthetic clinic when they want better guidance, not just a service list. This
+              section helps explain the shift from uncertainty to a more confident next step.
             </p>
           </Reveal>
 
@@ -166,9 +170,12 @@ export function HomePage() {
                 </div>
                 <div className="px-3 pb-4 pt-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[color:var(--accent-strong)]">Before</p>
-                  <h3 className="mt-3 display-font text-[34px] font-semibold leading-[0.95] tracking-[-0.04em]">Questions, hesitation, mixed priorities.</h3>
+                  <h3 className="mt-3 display-font text-[34px] font-semibold leading-[0.95] tracking-[-0.04em]">
+                    Questions about skin, downtime, and what actually fits.
+                  </h3>
                   <p className="mt-4 text-[15px] leading-7 text-[color:var(--muted)]">
-                    The current website does not create enough atmosphere, movement, or confidence around the clinic’s standard of care.
+                    Before the first visit, most patients want straightforward guidance on concerns, comfort, and whether a
+                    treatment path makes sense for them.
                   </p>
                 </div>
               </article>
@@ -181,11 +188,11 @@ export function HomePage() {
                 <div className="px-3 pb-4 pt-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[color:var(--accent-strong)]">After</p>
                   <h3 className="mt-3 display-font text-[34px] font-semibold leading-[0.95] tracking-[-0.04em]">
-                    An editorial clinic presence that feels premium instantly.
+                    A calmer plan with clearer next steps and contact options.
                   </h3>
                   <p className="mt-4 text-[15px] leading-7 text-[color:var(--muted)]">
-                    Strong hierarchy, elegant reveal motion, and a luxury palette create a much more memorable digital arrival
-                    without overcomplicating the site.
+                    The website guides visitors toward consultation, treatment understanding, and direct WhatsApp contact
+                    without adding friction.
                   </p>
                 </div>
               </article>
@@ -199,7 +206,7 @@ export function HomePage() {
           <Reveal>
             <p className="eyebrow">Patient Words</p>
             <h2 className="mt-4 max-w-3xl display-font text-[42px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[56px] md:text-[76px]">
-              Trust rises faster when the entire website feels composed.
+              A refined clinic experience is easier to trust from the first scroll.
             </h2>
           </Reveal>
           <Reveal delay={120}>
@@ -257,11 +264,11 @@ export function HomePage() {
           <Reveal>
             <p className="eyebrow justify-center">Ready When You Are</p>
             <h2 className="mx-auto mt-4 max-w-4xl display-font text-[42px] font-semibold leading-[0.9] tracking-[-0.055em] sm:text-[56px] md:text-[88px]">
-              Start with a skin consultation, not a rushed decision.
+              Start with a skin consultation at Nees Aesthetics.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[color:var(--muted)]">
-              The site stays static and fast for now, while keeping the conversion path premium and simple: WhatsApp, phone,
-              or a polished contact page.
+              If you are searching for a skin aesthetic clinic in Lahore, the fastest next step is a direct WhatsApp message,
+              phone call, or contact page inquiry.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <Button href={clinic.whatsapp}>Book Appointment</Button>

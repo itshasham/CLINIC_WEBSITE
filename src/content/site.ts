@@ -2,9 +2,9 @@ export const clinic = {
   name: 'Nees Aesthetics',
   legalName: 'Nees Aesthetics, Laser & Skin Clinic',
   shortDescription:
-    'Luxury laser, skin, hair, and cosmetic care in DHA Lahore with consultation-first treatment planning.',
+    'Luxury skin aesthetic clinic in DHA Lahore for laser, skin, hair, and cosmetic consultations.',
   description:
-    'Nees Aesthetics is a luxury aesthetic, laser, and skin clinic in DHA Lahore focused on calm consultations, advanced treatments, and a refined patient experience.',
+    'Nees Aesthetics is a luxury skin aesthetic clinic in DHA Lahore offering consultation-led laser, skin, hair, and cosmetic care in a calm, refined setting.',
   url: 'https://www.neesaesthetics.com',
   whatsapp: 'https://wa.me/923216771064',
   email: 'info@neesaesthetics.com',
@@ -18,6 +18,8 @@ export const clinic = {
     'https://www.google.com/maps/search/?api=1&query=Plaza+151+CCA+KFC+4th+Floor+Phase+5+DHA+Lahore+Pakistan',
   addressLines: ['Plaza # 151, CCA, (KFC) 4th Floor', 'Phase-5, DHA, Lahore, Pakistan'],
   hours: ['Monday to Saturday', '10:00 AM to 7:00 PM'],
+  seoImage: 'https://framerusercontent.com/images/nzLcI2gIko5jP7H7JHhs97DQ0.jpg?width=1820&height=960',
+  clinicImage: 'https://framerusercontent.com/images/4gRqLtjxPBtwZmePma4I5n97gcI.jpg?width=1820&height=961',
 };
 
 export const navigation = [
@@ -34,51 +36,51 @@ export const homeStats = [
 ];
 
 export const serviceCategories = [
-  'Skin Care Treatment',
+  'Skin Care Treatments',
   'Laser Treatments',
-  'Dermatological Consultations',
-  'Hair Treatment',
-  'Cosmetic Treatment',
+  'Skin Consultations',
+  'Hair Treatments',
+  'Cosmetic Treatments',
 ];
 
 export const services = [
   {
     title: 'Skin Care Treatment',
-    short: 'Corrective plans for acne, pigmentation, texture, hydration, and long-term barrier health.',
+    short: 'Consultation-led skin care plans for acne, pigmentation, texture, hydration, and long-term barrier support.',
     detail:
-      'Treatment pathways are designed around concerns like dullness, congestion, melasma, post-acne marks, and overall skin maintenance.',
+      'Treatment pathways are built around concerns such as dullness, congestion, post-acne marks, uneven tone, and overall skin maintenance.',
     highlights: ['Acne & breakouts', 'Pigmentation support', 'Glow and barrier repair'],
     image: 'https://framerusercontent.com/images/1ltYZuHAoDWM3VP7iQIZxLzO5U.jpg?width=810&height=504',
   },
   {
     title: 'Laser Treatments',
-    short: 'Technology-led sessions for hair reduction, resurfacing, texture correction, and visible refinement.',
+    short: 'Technology-led laser sessions for hair reduction, resurfacing, texture support, and visible refinement.',
     detail:
-      'Laser protocols can be positioned for unwanted hair, uneven tone, scar support, and confidence-restoring skin clarity.',
+      'Laser treatment pathways can support unwanted hair, uneven tone, texture concerns, and skin clarity planning.',
     highlights: ['Hair reduction', 'Texture refinement', 'Scar and tone support'],
     image: 'https://framerusercontent.com/images/WuCnAMbjHM6lrxzutxpjMudsDg.jpg?width=810&height=504',
   },
   {
-    title: 'Dermatological Consultations',
-    short: 'Clear, doctor-led conversations that translate skin concerns into a realistic and elegant plan.',
+    title: 'Skin Consultations',
+    short: 'Clear consultations that turn skin concerns into a realistic and well-paced treatment plan.',
     detail:
-      'This is where history, suitability, treatment pacing, and aftercare expectations get aligned before anything moves forward.',
+      'This is where concerns, suitability, treatment pacing, and aftercare expectations are aligned before anything moves forward.',
     highlights: ['Skin analysis', 'Goal setting', 'Suitability guidance'],
     image: 'https://framerusercontent.com/images/4gRqLtjxPBtwZmePma4I5n97gcI.jpg?width=1820&height=961',
   },
   {
     title: 'Hair Treatment',
-    short: 'Scalp and hair-focused support designed for confidence, density strategy, and long-term maintenance.',
+    short: 'Hair and scalp support designed around confidence, density strategy, and long-term maintenance.',
     detail:
-      'Hair consultations can be structured around shedding, thinning, regenerative support, and practical treatment sequences.',
+      'Hair consultations can be structured around shedding, thinning, restorative support, and practical treatment sequencing.',
     highlights: ['Scalp support', 'Thinning strategy', 'Regenerative options'],
     image: 'https://framerusercontent.com/images/nWwBecntKvGpTzePQeixjCY7Yo.jpg?width=150&height=150',
   },
   {
     title: 'Cosmetic Treatment',
-    short: 'Balanced, subtle aesthetic work created to look refreshed and refined instead of overdone.',
+    short: 'Balanced cosmetic care designed to look refreshed, refined, and natural instead of overdone.',
     detail:
-      'Cosmetic care can include contour-softening, feature balancing, and low-drama facial refresh treatments guided by suitability.',
+      'Cosmetic care can include contour-softening, feature balancing, and subtle refresh treatments guided by suitability.',
     highlights: ['Botox planning', 'Filler strategy', 'Natural finish'],
     image: 'https://framerusercontent.com/images/h1HAUVCoBzH0fhrzLgJnmnvdfsA.jpg?width=810&height=504',
   },
@@ -87,15 +89,15 @@ export const services = [
 export const experiencePillars = [
   {
     title: 'Calm consultation rooms',
-    description: 'Soft lighting, slower pacing, and a premium environment that lowers anxiety before treatment begins.',
+    description: 'Soft lighting, slower pacing, and a premium environment that helps visitors feel settled before treatment planning begins.',
   },
   {
     title: 'Refined treatment planning',
-    description: 'Recommendations are organized around fit, safety, timing, and realistic results rather than pressure.',
+    description: 'Recommendations are organized around fit, timing, comfort, and realistic outcomes rather than pressure.',
   },
   {
     title: 'Visible but natural outcomes',
-    description: 'The site language and visual direction are built around elegance, restraint, and skin confidence.',
+    description: 'The clinic language is built around elegance, restraint, and skin confidence rather than dramatic promises.',
   },
 ];
 
@@ -103,17 +105,17 @@ export const patientJourney = [
   {
     step: '01',
     title: 'Consultation',
-    text: 'Discuss skin history, concerns, comfort level, and the result you actually want.',
+    text: 'Discuss skin history, current concerns, comfort level, and the kind of result you actually want.',
   },
   {
     step: '02',
     title: 'Assessment',
-    text: 'Match suitability, downtime, and treatment pacing to your face, skin, and lifestyle.',
+    text: 'Match suitability, downtime, and treatment pacing to your skin, routine, and goals.',
   },
   {
     step: '03',
     title: 'Treatment plan',
-    text: 'Build a clear sequence instead of stacking procedures without intention.',
+    text: 'Build a clear sequence instead of stacking procedures without intention or clarity.',
   },
   {
     step: '04',
@@ -147,24 +149,29 @@ export const testimonials = [
 
 export const faqItems = [
   {
-    question: 'Do treatments begin without a consultation?',
+    question: 'What kind of clinic is Nees Aesthetics?',
     answer:
-      'No. The clinic experience is positioned around consultation-first care so suitability, goals, and downtime are discussed before treatment planning.',
+      'Nees Aesthetics is a skin aesthetic clinic in DHA Lahore focused on consultation-led laser, skin, hair, and cosmetic care in a calm premium setting.',
   },
   {
-    question: 'Is online booking active right now?',
+    question: 'Do I need a consultation before starting treatment?',
     answer:
-      'Not yet. This version keeps the conversion path simple through WhatsApp, phone, email, and a polished static inquiry experience.',
+      'Yes. The clinic is positioned around consultation-first care so suitability, goals, and downtime can be discussed before any treatment plan moves forward.',
   },
   {
-    question: 'Can the service list be expanded later?',
+    question: 'Where is the clinic located?',
     answer:
-      'Yes. The website is structured so additional treatment cards, offers, doctor content, or a real booking system can be added cleanly later.',
+      'The clinic is located in Phase 5, DHA Lahore, Pakistan, making it easy for visitors looking for a skin clinic or aesthetic clinic in Lahore to find the location details quickly.',
   },
   {
-    question: 'Are the visuals final clinic photography?',
+    question: 'How can I contact the clinic for a skin consultation?',
     answer:
-      'The build is prepared for premium clinic visuals, but the layout already works well while branded photos and before-after assets are being curated.',
+      'Visitors can contact Nees Aesthetics by WhatsApp, phone, or email through the contact page for consultations, treatment questions, and visit coordination.',
+  },
+  {
+    question: 'Which services are highlighted on the website?',
+    answer:
+      'The website currently highlights skin care treatments, laser treatments, skin consultations, hair treatments, and cosmetic treatments with a clear path to contact the clinic.',
   },
 ];
 

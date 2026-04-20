@@ -1,17 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from '@/components/Button/Button';
 import { Reveal } from '@/components/Reveal/Reveal';
+import { JsonLd } from '@/components/Seo/JsonLd';
 import { clinic, patientJourney, services } from '@/content/site';
+import { getBreadcrumbSchema, getServicesSchema } from '@/lib/seo';
 
 export function ServicesPage() {
   return (
     <main className="section-space page-hero-space">
+      <JsonLd
+        data={getBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Services', path: '/services' },
+        ])}
+      />
+      <JsonLd data={getServicesSchema()} />
       <section>
         <div className="container-shell flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <Reveal>
             <p className="eyebrow">Our Services</p>
             <h1 className="mt-4 max-w-4xl display-font text-[46px] font-semibold leading-[0.9] tracking-[-0.05em] md:text-[78px]">
-              The treatment pages now feel premium, structured, and easy to trust.
+              Skin, laser, hair, and cosmetic treatments in DHA Lahore.
             </h1>
           </Reveal>
           <Reveal delay={120}>
@@ -56,10 +65,11 @@ export function ServicesPage() {
           <Reveal>
             <p className="eyebrow">How It Works</p>
             <h2 className="mt-4 display-font text-[42px] font-semibold leading-[0.92] tracking-[-0.05em] md:text-[68px]">
-              The service section now moves visitors from curiosity to confidence.
+              A consultation-led path from first question to next step.
             </h2>
             <p className="mt-6 max-w-xl text-[16px] leading-8 text-[color:var(--muted)]">
-              Each service block is written to feel more editorial and less generic, while the CTA path stays clear and fast.
+              Each category is written to help visitors understand what the clinic covers, how the journey is paced, and how
+              to contact the clinic without extra friction.
             </p>
           </Reveal>
 

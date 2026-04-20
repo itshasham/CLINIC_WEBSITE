@@ -19,9 +19,9 @@ type InteractiveHeroProps = {
 };
 
 const floatingCards = [
-  { label: 'Laser Design', top: '20%', left: '6%', rotate: -8 },
-  { label: 'Skin Rituals', top: '18%', right: '7%', rotate: 7 },
-  { label: 'Quiet Consults', top: '56%', left: '8%', rotate: -11 },
+  { label: 'Laser Treatments', top: '20%', left: '6%', rotate: -8 },
+  { label: 'Skin Care', top: '18%', right: '7%', rotate: 7 },
+  { label: 'Calm Consultations', top: '56%', left: '8%', rotate: -11 },
   { label: 'Natural Finish', top: '52%', right: '9%', rotate: 10 },
 ];
 
@@ -101,9 +101,9 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 1.05, delay: 0.08, ease: [0.19, 1, 0.22, 1] }}
               >
-                Healthy, confident
+                Skin confidence
                 <br />
-                skin starts here
+                starts here
               </motion.h1>
             </div>
 
@@ -113,7 +113,8 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
             >
-              {clinicName} brings laser, skin, hair, and cosmetic care into a calmer digital experience inspired by premium editorial clinic design.
+              {clinicName} is a luxury skin aesthetic clinic in DHA Lahore for consultation-led laser, skin, hair, and
+              cosmetic care.
             </motion.p>
 
             <motion.div
