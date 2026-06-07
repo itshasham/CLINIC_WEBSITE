@@ -1,0 +1,17 @@
+{
+  "name": "Nees Aesthetics",
+  "short_name": "Nees Aesthetics",
+  "description": "Nees Aesthetics is a skin aesthetic clinic in DHA Lahore.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf4",
+  "theme_color": "#a6683f",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

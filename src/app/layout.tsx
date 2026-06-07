@@ -25,6 +25,16 @@ export const metadata: Metadata = {
   alternates: defaultMetadata.alternates,
   openGraph: defaultMetadata.openGraph,
   twitter: defaultMetadata.twitter,
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png', sizes: '96x96' },
+    ],
+    shortcut: '/favicon.png',
+    apple: [
+      { url: '/favicon.png', type: 'image/png', sizes: '96x96' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   category: 'health',
   robots: {
     index: true,
