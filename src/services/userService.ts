@@ -1,7 +1,7 @@
 export function getClinicContact() {
   return {
-    whatsapp: 'https://wa.me/923000000000',
-    phone: '+1 (555) 123-4567',
+    whatsapp: 'https://wa.me/923146771064',
+    phone: '+92 314 6771064',
     email: 'example@gmail.com',
   };
 }
