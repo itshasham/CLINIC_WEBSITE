@@ -39,7 +39,7 @@ export function HomePage() {
       <InteractiveHero heroImage={heroImage} clinicName={clinic.name} whatsapp={clinic.whatsapp} orbitServices={orbitServices} />
 
       <section className="section-space py-10">
-        <div className="container-shell overflow-hidden rounded-[28px] border border-white/55 bg-[rgba(255,250,244,0.66)] px-5 py-4 shadow-[0_14px_34px_rgba(73,44,23,0.05)] backdrop-blur-xl md:px-8">
+        <div className="container-shell overflow-hidden rounded-[28px] border border-white/55 bg-[rgba(248,255,255,0.7)] px-5 py-4 shadow-[0_14px_34px_rgba(19,98,106,0.08)] backdrop-blur-xl md:px-8">
           <div className="marquee-track flex w-max gap-5">
             {marqueeItems.map((item, index) => (
               <span
@@ -76,10 +76,10 @@ export function HomePage() {
       <section className="section-space">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <Reveal>
-            <div className="relative min-h-[610px] overflow-hidden rounded-[44px] border border-white/50 bg-[#e8d8c4] shadow-[var(--shadow-strong)]">
+            <div className="relative min-h-[610px] overflow-hidden rounded-[44px] border border-white/50 bg-[#d9eff0] shadow-[var(--shadow-strong)]">
               <img src={clinicImage} alt="Calm aesthetic clinic treatment room" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(25,15,10,0.05),rgba(25,15,10,0.35))]" />
-              <div className="absolute bottom-5 left-5 right-5 rounded-[30px] bg-[#fffaf3]/88 p-6 backdrop-blur-xl">
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,51,58,0.06),rgba(10,51,58,0.34))]" />
+              <div className="absolute bottom-5 left-5 right-5 rounded-[30px] bg-[rgba(247,255,255,0.88)] p-6 backdrop-blur-xl">
                 <p className="eyebrow">Clinic Standard</p>
                 <h3 className="mt-3 display-font text-[38px] font-semibold leading-[0.95] tracking-[-0.04em]">Soft luxury with clinical control</h3>
               </div>
@@ -125,7 +125,7 @@ export function HomePage() {
                   From the first inquiry to aftercare guidance, the clinic experience is positioned around calm communication,
                   realistic planning, and polished support rather than pressure.
                 </p>
-                <Button href={clinic.whatsapp} className="mt-9 bg-white text-[color:var(--text)] hover:bg-[#fff4e8]">
+                <Button href={clinic.whatsapp} className="mt-9 bg-white text-[color:var(--text)] hover:bg-[#ecfafa]">
                   Book Appointment
                 </Button>
               </div>
@@ -163,10 +163,10 @@ export function HomePage() {
 
           <Reveal delay={120}>
             <div className="grid gap-5 md:grid-cols-2">
-              <article className="overflow-hidden rounded-[34px] border border-white/55 bg-[rgba(255,250,245,0.76)] p-3 shadow-[var(--shadow-soft)]">
+              <article className="overflow-hidden rounded-[34px] border border-white/55 bg-[rgba(247,255,255,0.76)] p-3 shadow-[var(--shadow-soft)]">
                 <div className="relative h-[230px] overflow-hidden rounded-[26px]">
                   <img src={resultsImage} alt="Clinical skin care detail" className="h-full w-full object-cover saturate-[0.82]" />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,17,12,0.02)_0%,rgba(28,17,12,0.36)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,51,58,0.02)_0%,rgba(10,51,58,0.34)_100%)]" />
                 </div>
                 <div className="px-3 pb-4 pt-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[color:var(--accent-strong)]">Before</p>
@@ -180,10 +180,10 @@ export function HomePage() {
                 </div>
               </article>
 
-              <article className="overflow-hidden rounded-[34px] border border-[color:var(--accent-soft)]/65 bg-[linear-gradient(180deg,rgba(255,248,240,0.92)_0%,rgba(243,228,212,0.96)_100%)] p-3 shadow-[0_26px_60px_rgba(101,63,37,0.1)]">
+              <article className="overflow-hidden rounded-[34px] border border-[color:var(--accent-soft)]/65 bg-[linear-gradient(180deg,rgba(248,255,255,0.94)_0%,rgba(219,243,244,0.96)_100%)] p-3 shadow-[0_26px_60px_rgba(17,88,96,0.12)]">
                 <div className="relative h-[230px] overflow-hidden rounded-[26px]">
                   <img src={heroImage} alt="Refined clinic website atmosphere" className="h-full w-full object-cover" />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,17,12,0.02)_0%,rgba(28,17,12,0.28)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,51,58,0.02)_0%,rgba(10,51,58,0.26)_100%)]" />
                 </div>
                 <div className="px-3 pb-4 pt-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[color:var(--accent-strong)]">After</p>
@@ -216,12 +216,12 @@ export function HomePage() {
           </Reveal>
         </div>
 
-        <div className="container-shell mt-12 overflow-hidden rounded-[34px] border border-white/55 bg-[rgba(255,250,245,0.74)] px-5 py-5 shadow-[var(--shadow-soft)] md:px-6">
+        <div className="container-shell mt-12 overflow-hidden rounded-[34px] border border-white/55 bg-[rgba(247,255,255,0.74)] px-5 py-5 shadow-[var(--shadow-soft)] md:px-6">
           <div className="testimonial-track flex w-max gap-5">
             {testimonialTrack.map((testimonial, index) => (
               <article
                 key={`${testimonial.name}-${index}`}
-                className="w-[320px] rounded-[28px] border border-white/70 bg-white/72 p-6 shadow-[0_18px_36px_rgba(73,44,23,0.05)] md:w-[380px]"
+                className="w-[320px] rounded-[28px] border border-white/70 bg-white/72 p-6 shadow-[0_18px_36px_rgba(17,88,96,0.08)] md:w-[380px]"
               >
                 <p className="text-[20px] leading-none text-[color:var(--accent-strong)]">✤ ✤ ✤</p>
                 <blockquote className="mt-6 text-[19px] leading-8 tracking-[-0.03em] text-[color:var(--text)]">
@@ -246,7 +246,7 @@ export function HomePage() {
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <Reveal key={item.question} delay={index * 80}>
-                <details className="group rounded-[28px] border border-white/55 bg-[rgba(255,251,247,0.78)] p-6 open:shadow-[var(--shadow-soft)]">
+                <details className="group rounded-[28px] border border-white/55 bg-[rgba(248,255,255,0.78)] p-6 open:shadow-[var(--shadow-soft)]">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[23px] font-semibold tracking-[-0.035em] text-[color:var(--text)]">
                     {item.question}
                     <span className="grid size-9 place-items-center rounded-full bg-[color:var(--surface-2)] text-[18px] transition group-open:rotate-45">+</span>

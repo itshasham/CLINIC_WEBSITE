@@ -40,8 +40,8 @@ export function AboutPage() {
                 alt="Clinic atmosphere"
                 className="absolute inset-0 h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(27,16,10,0.08)_0%,rgba(27,16,10,0.54)_100%)]" />
-              <div className="absolute bottom-5 left-5 right-5 rounded-[28px] border border-white/12 bg-[rgba(22,12,9,0.48)] p-6 text-white backdrop-blur-xl">
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,44,50,0.08)_0%,rgba(8,34,41,0.56)_100%)]" />
+              <div className="absolute bottom-5 left-5 right-5 rounded-[28px] border border-white/12 bg-[rgba(8,34,41,0.5)] p-6 text-white backdrop-blur-xl">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/55">Clinic Positioning</p>
                 <h2 className="mt-3 display-font text-[36px] font-semibold leading-[0.95] tracking-[-0.04em]">
                   Warm luxury, clinical clarity, and a quieter kind of confidence.
@@ -56,7 +56,7 @@ export function AboutPage() {
         <div className="container-shell grid gap-6 md:grid-cols-3">
           {experiencePillars.map((item, index) => (
             <Reveal key={item.title} delay={index * 80}>
-              <article className="rounded-[30px] border border-white/55 bg-[rgba(255,251,247,0.8)] p-8 shadow-[0_16px_40px_rgba(64,40,17,0.05)]">
+              <article className="rounded-[30px] border border-white/55 bg-[rgba(248,255,255,0.8)] p-8 shadow-[0_16px_40px_rgba(17,88,96,0.08)]">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--accent-strong)]">0{index + 1}</p>
                 <h3 className="mt-4 display-font text-[34px] font-semibold tracking-[-0.04em]">{item.title}</h3>
                 <p className="mt-4 leading-7 text-[color:var(--muted)]">{item.description}</p>
@@ -78,7 +78,7 @@ export function AboutPage() {
           <div className="grid gap-4">
             {patientJourney.map((item, index) => (
               <Reveal key={item.step} delay={index * 70}>
-                <article className="rounded-[28px] border border-white/55 bg-[rgba(255,250,245,0.76)] p-6 shadow-[0_14px_34px_rgba(64,40,17,0.04)]">
+                <article className="rounded-[28px] border border-white/55 bg-[rgba(248,255,255,0.76)] p-6 shadow-[0_14px_34px_rgba(17,88,96,0.08)]">
                   <div className="grid gap-3 md:grid-cols-[86px_1fr] md:items-start">
                     <p className="display-font text-[40px] font-semibold leading-none tracking-[-0.05em] text-[color:var(--accent-deep)]">
                       {item.step}

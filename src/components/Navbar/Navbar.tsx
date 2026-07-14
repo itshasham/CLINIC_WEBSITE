@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -13,7 +14,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 px-4 pt-4 md:px-6">
       <div className="container-shell">
-        <div className="rounded-[28px] border border-white/55 bg-[rgba(255,250,244,0.78)] px-4 py-3 shadow-[0_24px_60px_rgba(73,45,28,0.08)] backdrop-blur-xl md:px-5">
+        <div className="rounded-[28px] border border-white/55 bg-[rgba(248,255,255,0.78)] px-4 py-3 shadow-[0_24px_60px_rgba(17,88,96,0.1)] backdrop-blur-xl md:px-5">
           <div className="grid items-center gap-4 lg:grid-cols-[1fr_auto_1fr]">
             <nav className="hidden items-center gap-2 lg:flex" aria-label="Primary navigation">
               {navigation.map((link) => {
@@ -36,13 +37,19 @@ export function Navbar() {
             </nav>
 
             <div className="flex items-center justify-between gap-4 lg:contents">
-              <Link href="/" className="min-w-0 text-center lg:justify-self-center" aria-label={`${clinic.name} home`}>
-                <span className="display-font block text-[30px] font-semibold leading-none tracking-[-0.05em] text-[color:var(--text)] md:text-[34px]">
-                  {clinic.name}
-                </span>
-                <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.26em] text-[color:var(--accent-strong)]">
-                  Laser & Skin Clinic
-                </span>
+              <Link
+                href="/"
+                className="min-w-0 rounded-[20px] px-1 py-1 text-center transition hover:bg-white/40 lg:justify-self-center"
+                aria-label={`${clinic.name} home`}
+              >
+                <Image
+                  src="/nees-logo.png"
+                  alt={clinic.name}
+                  width={651}
+                  height={331}
+                  className="h-auto w-[150px] md:w-[178px]"
+                  priority
+                />
               </Link>
 
               <button

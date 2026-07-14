@@ -16,9 +16,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top right, rgba(244, 224, 204, 0.65), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(235, 210, 187, 0.4), transparent 28%),
-    linear-gradient(180deg, #faf5ef 0%, #f5ede5 45%, #f8f3ee 100%);
+    radial-gradient(circle at top right, rgba(146, 223, 227, 0.38), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(190, 241, 241, 0.42), transparent 26%),
+    linear-gradient(180deg, #f7fcfc 0%, #eef8f8 45%, #f6fcfc 100%);
   color: var(--text);
   font-family: 'Manrope', sans-serif;
 }
@@ -30,8 +30,8 @@ body::before {
   pointer-events: none;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 28%),
-    linear-gradient(90deg, rgba(88, 57, 37, 0.025) 1px, transparent 1px),
-    linear-gradient(rgba(88, 57, 37, 0.025) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(44, 138, 145, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(44, 138, 145, 0.03) 1px, transparent 1px);
   background-size: auto, 44px 44px, 44px 44px;
   opacity: 0.38;
 }
@@ -43,7 +43,7 @@ body::after {
   pointer-events: none;
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.34), transparent 18%),
-    radial-gradient(circle at 80% 30%, rgba(201, 164, 131, 0.16), transparent 20%),
+    radial-gradient(circle at 80% 30%, rgba(73, 188, 197, 0.16), transparent 20%),
     radial-gradient(circle at 45% 72%, rgba(255, 255, 255, 0.18), transparent 18%);
   opacity: 0.8;
 }

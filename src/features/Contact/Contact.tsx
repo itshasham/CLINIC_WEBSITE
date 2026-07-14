@@ -66,7 +66,7 @@ export function ContactPage() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="rounded-[36px] border border-[color:var(--line)] bg-[linear-gradient(180deg,rgba(255,250,244,0.96)_0%,rgba(240,230,215,0.92)_100%)] p-6 shadow-[0_28px_80px_rgba(24,17,13,0.08)] md:p-8">
+            <div className="rounded-[36px] border border-[color:var(--line)] bg-[linear-gradient(180deg,rgba(249,255,255,0.96)_0%,rgba(224,245,246,0.92)_100%)] p-6 shadow-[0_28px_80px_rgba(8,42,48,0.1)] md:p-8">
               <div className="rounded-[28px] bg-[color:var(--surface)] p-6 md:p-7">
                 <p className="text-sm uppercase tracking-[0.28em] text-[color:var(--accent)]">Contact form preview</p>
                 <h2 className="mt-3 display-font text-[40px] font-semibold tracking-[-0.04em]">Tell the clinic what you need</h2>
@@ -103,7 +103,7 @@ export function ContactPage() {
       <section className="section-space pt-6">
         <div className="container-shell grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <Reveal>
-            <div className="rounded-[36px] bg-[linear-gradient(180deg,#2d231d_0%,#18110d_100%)] p-8 text-white md:p-12">
+            <div className="rounded-[36px] bg-[linear-gradient(180deg,#10363c_0%,#081f24_100%)] p-8 text-white md:p-12">
               <p className="text-sm uppercase tracking-[0.28em] text-white/60">Clinic information</p>
               <h2 className="mt-4 display-font text-[42px] font-semibold tracking-[-0.04em] md:text-[56px]">
                 Direct details for calls, WhatsApp, email, and directions.
@@ -136,7 +136,7 @@ export function ContactPage() {
             <Reveal delay={200}>
               <div className="rounded-[36px] border border-[color:var(--line)] bg-[color:var(--surface)] p-8 md:p-10">
                 <p className="text-sm uppercase tracking-[0.28em] text-[color:var(--accent)]">Location</p>
-                <div className="mt-4 rounded-[28px] border border-dashed border-[color:var(--line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.6)_0%,rgba(240,230,215,0.8)_100%)] p-8">
+                <div className="mt-4 rounded-[28px] border border-dashed border-[color:var(--line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.72)_0%,rgba(222,244,246,0.84)_100%)] p-8">
                   <h3 className="display-font text-[34px] font-semibold tracking-[-0.04em]">DHA Phase 5, Lahore</h3>
                   <p className="mt-3 max-w-2xl leading-8 text-[color:var(--muted)]">
                     {clinic.addressLines.join(', ')}. This makes it easier for visitors searching for a skin clinic in DHA

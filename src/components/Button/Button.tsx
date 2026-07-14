@@ -27,11 +27,11 @@ export function Button({
   };
   const variants = {
     primary:
-      'bg-[color:var(--accent-strong)] text-white shadow-[0_18px_34px_rgba(93,58,34,0.18)] hover:-translate-y-0.5 hover:bg-[color:var(--accent-deep)]',
+      'bg-[color:var(--accent-strong)] text-white shadow-[0_18px_34px_rgba(21,127,137,0.2)] hover:-translate-y-0.5 hover:bg-[color:var(--accent-deep)]',
     secondary:
-      'border border-[color:var(--line)] bg-white/70 text-[color:var(--text)] shadow-[0_10px_24px_rgba(62,37,18,0.04)] hover:-translate-y-0.5 hover:border-[color:var(--accent-soft)] hover:bg-white',
+      'border border-[color:var(--line)] bg-white/70 text-[color:var(--text)] shadow-[0_10px_24px_rgba(17,88,96,0.08)] hover:-translate-y-0.5 hover:border-[color:var(--accent-soft)] hover:bg-white',
     dark:
-      'bg-[color:var(--dark)] text-white shadow-[0_18px_34px_rgba(17,10,8,0.22)] hover:-translate-y-0.5 hover:bg-[color:var(--dark-soft)]',
+      'bg-[color:var(--dark)] text-white shadow-[0_18px_34px_rgba(8,42,48,0.24)] hover:-translate-y-0.5 hover:bg-[color:var(--dark-soft)]',
     ghost: 'text-[color:var(--accent-strong)] underline-offset-4 hover:underline',
   };
   const content = (

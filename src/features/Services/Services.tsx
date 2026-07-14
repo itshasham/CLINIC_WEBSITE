@@ -33,10 +33,10 @@ export function ServicesPage() {
         <div className="container-shell grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => (
             <Reveal key={service.title} delay={index * 80}>
-              <article className="group overflow-hidden rounded-[32px] border border-white/55 bg-[rgba(255,251,247,0.8)] p-3 shadow-[var(--shadow-soft)]">
+              <article className="group overflow-hidden rounded-[32px] border border-white/55 bg-[rgba(248,255,255,0.8)] p-3 shadow-[var(--shadow-soft)]">
                 <div className="relative h-56 overflow-hidden rounded-[24px]">
                   <img src={service.image} alt={service.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,10,7,0.04)_0%,rgba(18,10,7,0.34)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,34,41,0.04)_0%,rgba(8,34,41,0.32)_100%)]" />
                 </div>
                 <div className="px-3 pb-4 pt-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[color:var(--accent-strong)]">0{index + 1}</p>
@@ -76,7 +76,7 @@ export function ServicesPage() {
           <div className="grid gap-4">
             {patientJourney.map((item, index) => (
               <Reveal key={item.step} delay={index * 70}>
-                <article className="rounded-[28px] border border-white/55 bg-[rgba(255,250,245,0.78)] p-6 shadow-[0_16px_34px_rgba(64,40,17,0.04)]">
+                <article className="rounded-[28px] border border-white/55 bg-[rgba(248,255,255,0.78)] p-6 shadow-[0_16px_34px_rgba(17,88,96,0.08)]">
                   <div className="flex items-start gap-5">
                     <p className="display-font text-[40px] font-semibold leading-none tracking-[-0.05em] text-[color:var(--accent-deep)]">
                       {item.step}

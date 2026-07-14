@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   twitter: defaultMetadata.twitter,
   icons: {
     icon: [
-      { url: '/favicon.png', type: 'image/png', sizes: '96x96' },
+      { url: '/favicon.png', type: 'image/png', sizes: '512x512' },
     ],
     shortcut: '/favicon.png',
     apple: [
-      { url: '/favicon.png', type: 'image/png', sizes: '96x96' },
+      { url: '/apple-touch-icon.png', type: 'image/png', sizes: '512x512' },
     ],
   },
   manifest: '/site.webmanifest',

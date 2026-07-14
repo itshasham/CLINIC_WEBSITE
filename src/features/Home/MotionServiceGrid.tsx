@@ -39,7 +39,7 @@ export function MotionServiceGrid({ services }: MotionServiceGridProps) {
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             />
             <motion.div
-              className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,247,240,0.24),transparent_34%),linear-gradient(180deg,rgba(32,18,12,0.02),rgba(32,18,12,0.22))]"
+              className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(219,243,244,0.26),transparent_34%),linear-gradient(180deg,rgba(8,34,41,0.02),rgba(8,34,41,0.24))]"
               whileHover={{ opacity: 0.72 }}
             />
             <div className="absolute left-4 top-4 rounded-full bg-[#fffaf3]/88 px-3 py-1 text-[12px] font-semibold text-[color:var(--accent-strong)] backdrop-blur-md">

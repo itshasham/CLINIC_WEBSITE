@@ -127,9 +127,9 @@ export function TreatmentFan({ items }: TreatmentFanProps) {
           >
             <Link
               href="/services"
-              className="group flex h-[180px] w-[76px] cursor-pointer flex-col items-center justify-start gap-4 rounded-[999px] border border-white/28 bg-[linear-gradient(180deg,rgba(214,191,171,0.88)_0%,rgba(184,156,134,0.88)_100%)] px-2 py-3 text-[color:var(--text)] shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_24px_48px_rgba(30,16,8,0.16)] backdrop-blur-md transition duration-300 hover:-translate-y-2 hover:bg-[linear-gradient(180deg,rgba(226,203,184,0.95)_0%,rgba(194,164,141,0.94)_100%)] md:h-[228px] md:w-[90px]"
+              className="group flex h-[180px] w-[76px] cursor-pointer flex-col items-center justify-start gap-4 rounded-[999px] border border-white/28 bg-[linear-gradient(180deg,rgba(220,244,245,0.9)_0%,rgba(177,223,226,0.88)_100%)] px-2 py-3 text-[color:var(--text)] shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_24px_48px_rgba(11,74,81,0.16)] backdrop-blur-md transition duration-300 hover:-translate-y-2 hover:bg-[linear-gradient(180deg,rgba(232,251,252,0.96)_0%,rgba(190,231,234,0.94)_100%)] md:h-[228px] md:w-[90px]"
             >
-              <span className="block size-10 overflow-hidden rounded-full border border-white/40 bg-white/28 shadow-[0_10px_24px_rgba(40,22,12,0.12)] md:size-11">
+              <span className="block size-10 overflow-hidden rounded-full border border-white/40 bg-white/30 shadow-[0_10px_24px_rgba(11,74,81,0.14)] md:size-11">
                 {item.image ? <img src={item.image} alt="" className="h-full w-full object-cover" loading="lazy" /> : null}
               </span>
               <span className="text-[12px] font-medium leading-tight tracking-[-0.02em] [writing-mode:vertical-rl] md:text-[14px]">
@@ -140,7 +140,7 @@ export function TreatmentFan({ items }: TreatmentFanProps) {
         );
       })}
 
-      <div className="absolute bottom-0 left-1/2 h-[168px] w-[312px] -translate-x-1/2 rounded-t-[190px] border border-[#f2e2d4] bg-[radial-gradient(circle_at_top,#fffdf9_0%,#fef9f4_46%,#f7ede2_100%)] shadow-[0_28px_70px_rgba(44,24,12,0.25)] md:h-[208px] md:w-[420px]">
+      <div className="absolute bottom-0 left-1/2 h-[168px] w-[312px] -translate-x-1/2 rounded-t-[190px] border border-[#d5eef0] bg-[radial-gradient(circle_at_top,#fcffff_0%,#f3fcfc_46%,#deeff1_100%)] shadow-[0_28px_70px_rgba(8,42,48,0.2)] md:h-[208px] md:w-[420px]">
         <div className="flex h-full flex-col items-center justify-center px-7 pt-4 text-center md:px-10">
           <span className="text-[24px] leading-none text-[color:var(--accent-strong)]">✤</span>
           <p className="mt-3 display-font text-[34px] font-semibold tracking-[-0.04em] text-[color:var(--text)] md:text-[52px]">

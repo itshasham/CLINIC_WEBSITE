@@ -32,7 +32,7 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
   const pointerY = useMotionValue(32);
   const smoothX = useSpring(pointerX, { stiffness: 120, damping: 24 });
   const smoothY = useSpring(pointerY, { stiffness: 120, damping: 24 });
-  const glow = useMotionTemplate`radial-gradient(circle at ${smoothX}% ${smoothY}%, rgba(255, 241, 226, 0.28), rgba(255, 241, 226, 0.08) 22%, transparent 48%)`;
+  const glow = useMotionTemplate`radial-gradient(circle at ${smoothX}% ${smoothY}%, rgba(140, 222, 227, 0.26), rgba(140, 222, 227, 0.08) 22%, transparent 48%)`;
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
   const imageY = useTransform(scrollYProgress, [0, 1], ['0%', reduceMotion ? '4%' : '8%']);
   const imageScale = useTransform(scrollYProgress, [0, 1], [1.02, reduceMotion ? 1.05 : 1.1]);
@@ -63,9 +63,9 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
             style={{ backgroundImage: `url(${heroImage})`, y: imageY, scale: imageScale }}
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(22,12,8,0.26)_0%,rgba(25,14,9,0.18)_28%,rgba(22,12,9,0.62)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,34,41,0.24)_0%,rgba(10,43,49,0.16)_28%,rgba(8,34,41,0.66)_100%)]" />
           {!reduceMotion ? <motion.div className="absolute inset-0" style={{ background: glow }} /> : null}
-          <div className="absolute inset-x-0 top-0 h-1/2 bg-[radial-gradient(circle_at_center,rgba(255,247,236,0.2),transparent_58%)]" />
+          <div className="absolute inset-x-0 top-0 h-1/2 bg-[radial-gradient(circle_at_center,rgba(215,250,252,0.2),transparent_58%)]" />
 
           {floatingCards.map((card, index) => (
             <motion.div
@@ -96,7 +96,7 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
 
             <div className="overflow-hidden">
               <motion.h1
-                className="max-w-[920px] display-font text-[44px] font-semibold leading-[0.88] tracking-[-0.06em] text-[#fffdf9] drop-shadow-[0_12px_42px_rgba(21,12,8,0.28)] sm:text-[60px] md:text-[102px] lg:text-[118px]"
+                className="max-w-[920px] display-font text-[44px] font-semibold leading-[0.88] tracking-[-0.06em] text-[#fbffff] drop-shadow-[0_12px_42px_rgba(8,34,41,0.34)] sm:text-[60px] md:text-[102px] lg:text-[118px]"
                 initial={{ opacity: 0, y: 90, rotateX: -16 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 1.05, delay: 0.08, ease: [0.19, 1, 0.22, 1] }}
@@ -108,7 +108,7 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
             </div>
 
             <motion.p
-              className="mt-6 max-w-[340px] text-[14px] font-medium leading-7 text-[#f7ecdf] sm:max-w-[560px] sm:text-[15px] md:text-[17px]"
+              className="mt-6 max-w-[340px] text-[14px] font-medium leading-7 text-[#e3f7f8] sm:max-w-[560px] sm:text-[15px] md:text-[17px]"
               initial={{ opacity: 0, y: 34 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
@@ -124,7 +124,7 @@ export function InteractiveHero({ heroImage, clinicName, whatsapp, orbitServices
               transition={{ duration: 0.85, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
             >
               <Magnetic>
-                <Button href={whatsapp} size="lg" className="bg-white text-[color:var(--text)] hover:bg-[#fff4e8]">
+                <Button href={whatsapp} size="lg" className="bg-white text-[color:var(--text)] hover:bg-[#ecfafa]">
                   Book Appointment
                 </Button>
               </Magnetic>
