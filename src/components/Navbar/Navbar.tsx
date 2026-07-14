@@ -45,8 +45,8 @@ export function Navbar() {
                 <Image
                   src="/nees-logo.png"
                   alt={clinic.name}
-                  width={651}
-                  height={331}
+                  width={633}
+                  height={237}
                   className="h-auto w-[150px] md:w-[178px]"
                   priority
                 />

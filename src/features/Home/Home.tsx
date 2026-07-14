@@ -260,7 +260,7 @@ export function HomePage() {
       </section>
 
       <section className="section-space pt-0">
-        <div className="container-shell overflow-hidden rounded-[48px] bg-[linear-gradient(180deg,#f6e6d7_0%,#edd8c6_100%)] p-8 text-center shadow-[var(--shadow-soft)] md:p-16">
+        <div className="container-shell overflow-hidden rounded-[48px] border border-white/55 bg-[linear-gradient(180deg,rgba(248,255,255,0.96)_0%,rgba(220,244,245,0.94)_100%)] p-8 text-center shadow-[var(--shadow-soft)] md:p-16">
           <Reveal>
             <p className="eyebrow justify-center">Ready When You Are</p>
             <h2 className="mx-auto mt-4 max-w-4xl display-font text-[42px] font-semibold leading-[0.9] tracking-[-0.055em] sm:text-[56px] md:text-[88px]">

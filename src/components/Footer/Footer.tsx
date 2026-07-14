@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container-shell overflow-hidden rounded-[36px] bg-[linear-gradient(180deg,#0e3940_0%,#082229_100%)] text-white shadow-[0_34px_90px_rgba(8,42,48,0.28)]">
         <div className="grid gap-10 p-8 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:p-14">
           <div>
-            <Image src="/nees-logo.png" alt={clinic.name} width={651} height={331} className="h-auto w-[180px] rounded-[18px] bg-white/92 p-3" />
+            <Image src="/nees-logo.png" alt={clinic.name} width={633} height={237} className="h-auto w-[180px] md:w-[196px]" />
             <h2 className="mt-4 display-font text-[40px] font-semibold leading-[0.92] tracking-[-0.05em] sm:text-[56px]">
               Luxury skin, laser, hair, and cosmetic care in DHA Lahore.
             </h2>
